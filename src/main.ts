@@ -3,9 +3,13 @@ import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
 import { HeaderComponent } from './app/header/header';
+import { UserComponent } from './app/user/user';
 
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
 
 bootstrapApplication(HeaderComponent, appConfig)
+  .catch((err) => console.error(err));
+
+bootstrapApplication(UserComponent, appConfig)
   .catch((err) => console.error(err));

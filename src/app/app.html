@@ -14,5 +14,9 @@
         }
     </ul>
 
-    <app-tasks [name]="selectedUser().name" />
+    <app-tasks 
+        [name]="selectedUser().name" 
+        [tasks]="selectedUserTasks()"
+        (addTask)="onAddTask($event)"
+        (completeTask)="onCompleteTask($event)" />
 </main>
